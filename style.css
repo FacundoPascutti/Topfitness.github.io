@@ -1,0 +1,572 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Bebas Neue", sans-serif;
+    text-wrap: balance;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 2px;
+    background-image: url(3d-white-hexagon-background-realistic-geometric-cells-texture-abstract-white-banner-with-hexagonal-elements-vector.jpg);
+}
+
+.header__pagina {
+    font-weight: 900;
+    font-size: 2rem;
+    color: rgb(138, 0, 0);
+    text-decoration: none;
+    border: 1px solid rgb(27, 27, 27);
+    padding: 10px 50px;
+    border-radius: 30px;
+    background-color: rgb(27, 27, 27);
+    transition-property: background, font-size;
+    transition-duration: .5s;
+
+}
+.header__pagina:hover {
+    background-color: rgb(44, 44, 44);
+    font-size: 2.2rem;
+}
+.header__planes {
+    border: 1px solid rgb(27, 27, 27);
+    border-radius: 30px;
+    padding: 10px 50px;
+    font-weight: 900;
+    font-size: 2rem;
+    color: rgb(255, 253, 130);
+    text-decoration: none;
+    background-color: rgb(27, 27, 27);
+    transition-property: background, font-size;
+    transition-duration: .5s;
+}
+.header__planes:hover {
+    background-color: rgb(44, 44, 44);
+    font-size: 2.2rem;
+}
+
+.header__email {
+    border: 1px solid rgb(27, 27, 27);
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-weight: 900;
+    font-size: 2rem;
+    color: rgb(255, 253, 130);
+    text-decoration: none;
+    background-color: rgb(27, 27, 27);
+    transition-property: background, font-size;
+    transition-duration: .5s;
+}
+
+.header__email:hover {
+    background-color: rgb(44, 44, 44);
+    font-size: 2.2rem;
+}
+
+/*----------- QUERIES HEADER -------------*/
+
+@media screen and (max-width: 500px){
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100dvw;
+    }
+    .header__pagina {
+        margin-bottom: 10px;
+        
+
+    }
+    .header__email {
+        margin-bottom: 10px;
+        
+    }
+    .header__planes {
+        margin-bottom: 10px;
+        
+    }
+}
+
+
+/*----------- MAIN -------------*/
+
+.main {
+    background-image: linear-gradient(#0009, #0009), url(fd6f236a-7972-4e89-9e15-6acc453c125f_hvolbq.png);
+    background-size: cover;
+    width: clamp(300px, 100%, 100%);
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    container-name: main;
+    container-type: inline-size;
+    animation: aparecer 1s both;
+
+}
+
+.main-items {
+    margin: 120px;
+    font-size: 30px;
+}
+.main-items-h1 {
+    color:rgb(255, 253, 130);
+
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.main-items-p {
+    color:white;
+
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.main-img {
+    margin: 110px;
+    width: 1100px;
+    height: 600px;
+}
+video {
+    width: 850px;
+    height: 479px;
+    border-radius: 10px;
+    
+}
+
+/*----------- MAIN QUERIES -------------*/
+
+@media screen and (max-width: 900px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200vh;
+        width: 100dvw;
+    }
+    .main-img {
+        margin: 10px;
+        width: 900px;
+        height: 210px;
+    }
+    video {
+        width: 900px;
+        height: 200px;
+        border-radius: 10px;
+    }
+}
+
+
+/*----------- ACTIVIDADES -------------*/
+
+.actividades {
+    background-image: url(3d-white-hexagon-background-realistic-geometric-cells-texture-abstract-white-banner-with-hexagonal-elements-vector.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    
+}
+
+.actividades-h1 {
+    color:rgb(27, 27, 27);
+    text-wrap: wrap;
+    text-decoration: underline;
+}
+
+.actividades-p {
+    color:rgb(0, 0, 0);
+    text-wrap: wrap;
+}
+
+/*----------- ACTIVIDADES TITULO QUERIES -------------*/
+
+@media screen and (max-width: 900px) {
+    .actividades {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100dvw;
+    }
+}
+
+
+/*----------- ACTIVIDADES SECCIONES -------------*/
+
+
+.actividades-lista {
+    background-image: url(diseno-banner-fondo-profesional-negocios-abstracto-multiproposito_1340-16856.avif);
+    margin: 0px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    animation: aparecer-texto both;
+    animation-timeline: scroll();
+    animation-range-start: cover 10%;
+}
+
+.actividades-lista-1 {
+    margin-top: 40px;
+    font-size: 35px;
+    width: 500px;
+    background-color: rgb(212, 212, 212);
+    border: 4px solid rgb(179, 179, 179);
+    margin-bottom: 200px;
+    margin-left: 20px;
+    border-radius: 10px;
+    transition-property: margin;
+    transition-duration: .5s;
+}
+.actividades-lista-2 {
+    margin-top: 40px;
+    font-size: 35px;
+    width: 500px;
+    background-color: #afafaf;
+    border: 4px solid #666666c7;
+    margin-bottom: 200px;
+    margin-left: 20px;
+    border-radius: 10px;
+    transition-property: margin;
+    transition-duration: .5s;
+}
+.actividades-lista-3 {
+    margin-top: 40px;
+    font-size: 35px;
+    width: 500px;
+    background-color: #efb710bb;
+    border: 4px solid #ffbf00;
+    margin-bottom: 200px;
+    margin-left: 20px;
+    border-radius: 10px;
+    transition-property: margin;
+    transition-duration: .5s;
+}
+
+.actividades-lista-1:hover {
+    opacity: 0.6;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+}
+.actividades-lista-2:hover {
+    opacity: 0.6;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    
+}
+.actividades-lista-3:hover {
+    opacity: 0.6;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+}
+
+.actividades-lista-1-h3 {
+    color:rgb(27, 27, 27);
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.actividades-lista-1-p {
+    color:rgb(27, 27, 27);
+    text-align: center;
+    
+}
+
+.actividades-lista-1-h3-2 {
+    color:rgb(27, 27, 27);
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+/*----------- ACTIVIDADES SECCIONES QUERIES -------------*/
+
+@media screen and (max-width: 900px) {
+    .actividades-lista {
+        height: 250vh;
+        width: 100dvw;
+    }
+    .actividades-lista-1 {
+        margin: 10px;
+        width: 300px;
+        height: 400px;
+        font-size: 30px;
+    }
+    .actividades-lista-2 {
+        margin: 10px;
+        width: 300px;
+        height: 400px;
+        font-size: 30px;
+    }
+    .actividades-lista-3 {
+        margin: 10px;
+        width: 300px;
+        height: 400px;
+        font-size: 30px;
+    }
+}
+
+
+/*----------- INSTALACIONES -------------*/
+
+.instalaciones {
+    background-image: url(3d-white-hexagon-background-realistic-geometric-cells-texture-abstract-white-banner-with-hexagonal-elements-vector.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+
+.instalaciones-h1 {
+    color:rgb(27, 27, 27);
+    text-wrap: wrap;
+    text-decoration: underline;
+}
+
+.instalaciones-p {
+    color:rgb(0, 0, 0);
+    text-wrap: wrap;
+    
+}
+
+/*----------- INSTALACIONES QUERIES -------------*/
+@media screen and (max-width: 900px) {
+    .instalaciones {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100dvw;
+    }
+}
+
+/*----------- INSTALACIONES SECCIONES -------------*/
+.instalaciones-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(diseno-banner-fondo-profesional-negocios-abstracto-multiproposito_1340-16856.avif);
+}
+
+.instalaciones-img-1 {
+    width: 600px;
+    height: 600px;
+    margin: 10px;
+}
+
+.instalaciones-img-1-img {
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.instalaciones-img-1-h3 {
+    font-size: 40px;
+    color:rgb(255, 253, 130);
+}
+
+.instalaciones-img-1-p {
+    font-size: 20px;
+    color: white;
+}
+/*----------- INSTALACIONES SECCIONES QUERIES-------------*/
+
+@media screen and (max-width: 900px) {
+    .instalaciones-img {
+        width: 100dvw;
+        text-align: center;
+    }
+    .instalaciones-img-1-img {
+        width: 340px;
+    }
+}
+
+
+/*----------- FOOTER-------------*/
+.container-footer {
+    background-image: linear-gradient(#0009, #0009), url(1366_2000.jpeg);
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.formulario {
+    width: 500px;
+    margin-left: 100px;
+    margin-top: 150px;
+}
+h2 {
+    font-size: 50px;
+    color: rgb(255, 253, 130);
+    text-align: center;
+}
+input, textarea {
+    width: 500px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1.5px;
+
+}
+textarea {
+    min-width: 250px;
+    min-height: 120px;
+    resize: none;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+button {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(27, 27, 27);
+    color: rgb(255, 253, 130);
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 17px;
+}
+button:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+
+.form-input {
+    font-size: 30px;
+    color: rgb(255, 253, 130);
+    padding: 10px;
+    width: 100%;
+
+}
+
+.redes-sociales {
+    padding-top: 30px;
+    font-size: 30px;
+    margin-right: 100px;
+    margin-top: 150px;
+
+}
+.nuestras-redes {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 25px;
+    color:rgb(255, 253, 130);
+    
+}
+.redes {
+    text-align: center;
+
+}
+.ig {
+    color: brown;
+    padding: 10px;
+}
+.ig:hover {
+    opacity: 0.7;
+}
+.fb {
+    color: blue;
+    padding: 10px;
+}
+.fb:hover {
+    opacity: 0.6;
+}
+.wp {
+    color: green;
+    padding: 10px;
+}
+.wp:hover {
+    opacity: 0.7;
+}
+
+
+/*----------- FOOTER QUERIES-------------*/
+
+@media screen and (max-width: 900px) {
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100dvw;
+        height: 800px;
+    }
+    .formulario {
+        margin: 0;
+        text-align: center;
+        width: 100dvw;
+    }
+    .form-input {
+        width: 100dvw;
+    }
+
+    h2 {
+        font-size: 30px;
+        width: 100dvw;
+    }
+    input {
+        font-size: 10px;
+        width: 300px;
+        
+    }
+    textarea {
+        width: 300px;
+        
+    }
+    .redes-sociales {
+        width: 100dvw;
+    }
+    .nuestras-redes {
+        font-size: 30px;
+        width: 100dvw;
+    }
+    .redes {
+        width: 100dvw;
+    }
+}
+
+/*----------- ANIMACIONES -------------*/
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0.8;
+        translate: 0 -20%;
+        scale: .9;
+    }
+    
+
+    100% {
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+    }
+}
+
+@keyframes aparecer-texto {
+    0% {
+        opacity: 0.5;
+        translate: 0 30%;
+        scale: 2;
+    }
+
+    10% {
+        opacity: 1;
+        translate: 0 0%;
+        scale: 1;
+    }
+}
